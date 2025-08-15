@@ -8,7 +8,8 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
+## Credit received ##
+## Feedback L79
 
 >- Find summary information about the total blood mercury levels in our NYC HANES data (hint: names(nyc) will call the names of each column). What is the max value, what is the minimum value.  
 
@@ -75,7 +76,7 @@ class(nyc[["DX_DBTS"]])
 
 ```{r}
 
-first_four <- as.matrix(nyc[1:4])
+first_four <- as.matrix(nyc[1:4]) ## this would be nyc[,1:4] - you're missing a comma in the indexing
 
 class(first_four)
 
